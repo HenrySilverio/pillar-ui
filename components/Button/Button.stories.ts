@@ -14,3 +14,10 @@ export const Primary: StoryObj<ButtonProps> = {
     children: 'Button'
   }
 }
+
+export const Violet: StoryObj<ButtonProps> = {
+  args: {
+    children: 'Button',
+    className: 'theme-violet'
+  }
+}

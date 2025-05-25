@@ -60,14 +60,20 @@ module.exports = {
         outline: 'rgb(var(--outline))',
         divider: 'rgb(var(--divider))',
         white: 'rgb(var(--white))',
-        'text-primary': 'rgb(var(--text-primary))',
-        'text-secondary': 'rgb(var(--text-secondary))',
-        'text-tertiary': 'rgb(var(--text-tertiary))',
-        'text-disabled': 'rgb(var(--text-disabled))',
-        'bg-disabled': 'rgb(var(--bg-disabled))',
         'boxes-inputs': 'rgb(var(--boxes-inputs))',
-        'bg-light': 'rgb(var(--bg-light))',
-        'bg-dark': 'rgb(var(--bg-dark))',
+      },
+      backgroundColor: {
+        disabled: 'rgb(var(--bg-disabled))',
+        light: 'rgb(var(--bg-light))',
+        dark: 'rgb(var(--bg-dark))',
+      },
+      textColor: {
+        gray: {
+          primary: 'rgb(var(--text-primary))',
+          secondary: 'rgb(var(--text-secondary))',
+          tertiary: 'rgb(var(--text-tertiary))',
+        },
+        disabled: 'rgb(var(--text-disabled))',
       },
       boxShadow: {
         sm: 'var(--shadow-sm)',

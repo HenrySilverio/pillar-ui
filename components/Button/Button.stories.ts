@@ -1,23 +1,32 @@
-import { Meta, StoryObj } from "@storybook/react";
-import Button, { ButtonProps } from "@/components/Button/Button";
-
+import { Meta, StoryObj } from '@storybook/react';
+import Button, { ButtonProps } from '@/components/Button/Button';
 
 const meta: Meta<ButtonProps> = {
   title: 'Molecules/Button',
   component: Button,
-  argTypes: {}
-}
+  argTypes: {
+    children: {
+      type: 'string',
+    },
+    disabled: {
+      type: 'boolean'
+    },
+    className: {
+      type: 'string'
+    }
+  },
+};
 
-export default meta
+export default meta;
 export const Primary: StoryObj<ButtonProps> = {
   args: {
-    children: 'Button'
-  }
-}
+    children: 'Button',
+  },
+};
 
 export const Violet: StoryObj<ButtonProps> = {
   args: {
     children: 'Button',
-    className: 'theme-violet'
-  }
-}
+    className: 'theme-violet',
+  },
+};

@@ -10,6 +10,16 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    fontFamily: {
+      mulish: 'Mulish, sans-serif',
+    },
+    fontSize: {
+      xs: 'var(--font-xs)',
+      sm: 'var(--font-sm)',
+      md: 'var(--font-md)',
+      lg: 'var(--font-lg)',
+      xl: 'var(--font-xl)',
+    },
     spacing: {
       none: 'var(--spacing-none) /* 0px */',
       '4xs': 'var(--spacing-4xs) /* 8px */',
@@ -40,13 +50,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: toRgba('--primary'),
-        secondary: toRgba('--secondary'),
-        tertiary: toRgba('--tertiary'),
-        quaternary: toRgba('--quaternary'),
-        hover: toRgba('--hover'),
-        click: toRgba('--click'),
-
+        primary: 'rgba(var(--primary),   <alpha-value>)',
+        secondary: 'rgba(var(--secondary), <alpha-value>)',
+        tertiary: 'rgba(var(--tertiary),  <alpha-value>)',
+        quaternary: 'rgba(var(--quaternary),<alpha-value>)',
+        hover: 'rgba(var(--hover),     <alpha-value>)',
+        click: 'rgba(var(--click),     <alpha-value>)',
         icon: 'rgb(var(--icon))',
         outline: 'rgb(var(--outline))',
         divider: 'rgb(var(--divider))',

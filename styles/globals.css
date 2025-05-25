@@ -35,9 +35,15 @@
 
 @layer base {
   :root {
-
     /* Font */
     --font-mulish: 'Mulish', sans-serif;
+
+    /* Font Size */
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-nd: 16px;
+    --text-lg: 18px;
+    --text-xl: 20px;
 
     /* Colors*/
     --primary: 45, 91, 255;

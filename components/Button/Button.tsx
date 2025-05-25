@@ -4,7 +4,15 @@ export type ButtonProps = {
 
 const Button = ({ children, className }: ButtonProps) => {
   return (
-    <button className={`bg-primary text-white py-3 px-8 rounded-lg ${className}`}>
+    <button
+      className={`
+        bg-primary
+        hover:bg-[rgba(var(--hover),1)]
+        text-white py-3 px-8 rounded-lg
+        transition-colors duration-200
+        ${className}
+      `}
+    >
       {children}
     </button>
   );

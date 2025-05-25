@@ -8,7 +8,7 @@ const Button = ({ children, className }: ButtonProps) => {
       className={`
         bg-primary
         hover:bg-[rgba(var(--hover),1)]
-        text-white py-3 px-8 rounded-lg
+        text-white py-2 px-6 rounded-md
         transition-colors duration-200
         ${className}
       `}

@@ -14,11 +14,11 @@ module.exports = {
       mulish: 'Mulish, sans-serif',
     },
     fontSize: {
-      xs: 'var(--font-xs)',
-      sm: 'var(--font-sm)',
-      md: 'var(--font-md)',
-      lg: 'var(--font-lg)',
-      xl: 'var(--font-xl)',
+      xs: 'var(--text-xs)',
+      sm: 'var(--text-sm)',
+      md: 'var(--text-md)',
+      lg: 'var(--text-lg)',
+      xl: 'var(--text-xl)',
     },
     spacing: {
       none: 'var(--spacing-none) /* 0px */',
@@ -61,6 +61,7 @@ module.exports = {
         divider: 'rgb(var(--divider))',
         white: 'rgb(var(--white))',
         'boxes-inputs': 'rgb(var(--boxes-inputs))',
+        disabled: 'rgb(var(--text-disabled))',
       },
       backgroundColor: {
         disabled: 'rgb(var(--bg-disabled))',
@@ -73,7 +74,6 @@ module.exports = {
           secondary: 'rgb(var(--text-secondary))',
           tertiary: 'rgb(var(--text-tertiary))',
         },
-        disabled: 'rgb(var(--text-disabled))',
       },
       boxShadow: {
         sm: 'var(--shadow-sm)',

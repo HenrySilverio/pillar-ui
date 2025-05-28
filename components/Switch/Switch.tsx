@@ -11,16 +11,16 @@ export type SwitchProps = {
   variant?: 'common' | 'contract';
   disabled?: boolean;
   onChange?: (enabled: boolean) => void;
-} & HeadlessSwitchProps<any>;
+} & Omit<HeadlessSwitchProps<'button'>, 'checked' | 'onChange'>;
 
 const Switch = ({
-  defaultEnabled: enabledByDeafult,
+  defaultEnabled = false,
   variant = 'common',
-  disabled,
+  disabled = false,
   onChange,
   ...rest
 }: SwitchProps) => {
-  const [enabled, setEnabled] = useState(enabledByDeafult || false);
+  const [enabled, setEnabled] = useState(defaultEnabled);
   const style = useStyle({ variant, enabled, disabled });
 
   const toggle = () => {
@@ -34,15 +34,19 @@ const Switch = ({
       checked={enabled}
       onChange={toggle}
       disabled={disabled}
-      {...rest}
       className={style.Container}
+      {...rest}
     >
       <span className="sr-only">switch toggle</span>
-      {variant === 'common' && <span className={style.Switch}/>}
+      {variant === 'common' && <span className={style.Switch} />}
       {variant === 'contract' && (
         <span className={style.Switch}>
-          {enabled && <CheckIcon className={style.Icon} aria-disabled={disabled} />}
-          {enabled || <XMarkIcon className={style.Icon} aria-disabled={disabled} />}
+          {enabled && (
+            <CheckIcon className={style.Icon} aria-disabled={disabled} />
+          )}
+          {!enabled && (
+            <XMarkIcon className={style.Icon} aria-disabled={disabled} />
+          )}
         </span>
       )}
     </HeadlessSwitch>

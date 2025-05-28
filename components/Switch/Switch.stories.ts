@@ -6,7 +6,7 @@ const meta: Meta<SwitchProps> = {
   title: "Molecules/Switch",
   component: Switch,
   argTypes: {
-    defaultEnable: {
+    defaultEnabled: {
       type: "boolean",
       control: { type: "boolean" },
     },
@@ -29,41 +29,41 @@ export const Primary: Story = {
 export const CommonEnabled: Story = {
   args: {
     variant: "common",
-    defaultEnable: true,
+    defaultEnabled: true,
   },
 };
 
 export const CommonNotEnabled: Story = {
   args: {
     variant: "common",
-    defaultEnable: false,
+    defaultEnabled: false,
   },
 };
 
 export const ContractEnabled: Story = {
   args: {
     variant: "contract",
-    defaultEnable: true,
+    defaultEnabled: true,
   },
 };
 
 export const ContractNotEnabled: Story = {
   args: {
     variant: "contract",
-    defaultEnable: false,
+    defaultEnabled: false,
   },
 };
 
 export const CommonEnabledDisabled: Story = {
   args: {
-    defaultEnable: true,
+    defaultEnabled: true,
     disabled: true,
   },
 };
 
 export const CommonNotEnabledDisabled: Story = {
   args: {
-    defaultEnable: false,
+    defaultEnabled: false,
     disabled: true,
   },
 };
@@ -71,7 +71,7 @@ export const CommonNotEnabledDisabled: Story = {
 export const ContractEnabledDisabled: Story = {
   args: {
     variant: "contract",
-    defaultEnable: true,
+    defaultEnabled: true,
     disabled: true,
   },
 };
@@ -79,7 +79,7 @@ export const ContractEnabledDisabled: Story = {
 export const ContractNotEnabledDisabled: Story = {
   args: {
     variant: "contract",
-    defaultEnable: false,
+    defaultEnabled: false,
     disabled: true,
   },
 };

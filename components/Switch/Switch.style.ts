@@ -5,7 +5,7 @@ import { SwitchProps } from './Switch';
 export default ({ variant, enabled, disabled }: SwitchProps) => {
   const containerVariant = cva(
     classNames(
-      'outline-none relative inline-flex h-6 w-16 items-center rounded-full disabled: bg-disabled',
+      'outline-none relative inline-flex h-6 w-16 items-center rounded-full disabled:bg-disabled',
       { 'pointer-events-none': disabled },
     ),
     {
@@ -35,15 +35,16 @@ export default ({ variant, enabled, disabled }: SwitchProps) => {
     enabled ? 'translate-x[2.1rem]' : 'translate-x-1',
   );
 
-  const iconsClasses = classNames('aria-disabled: text-font-disabled',
-    {'text-success': enabled && !disabled},
-    {'text-error': !enabled && !disabled},
-    {'text-disabled': disabled}
+  const iconsClasses = classNames(
+    'aria-disabled: text-font-disabled',
+    { 'text-success': enabled && !disabled },
+    { 'text-error': !enabled && !disabled },
+    { 'text-disabled': disabled },
   );
 
   return {
     Icon: iconsClasses,
     Switch: switchClasses,
-    Container: containerClasses
-  }
+    Container: containerClasses,
+  };
 };

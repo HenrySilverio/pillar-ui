@@ -18,7 +18,7 @@ const avatarSizeMap = {
 const Avatar = ({
   image,
   description = '',
-  size = 'xs',
+  size = 'md',
   className,
   ...res
 }: AvatarProps) => {

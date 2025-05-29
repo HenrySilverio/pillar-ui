@@ -1,0 +1,19 @@
+import { Meta, Canvas, Primary, Controls } from '@storybook/addon-docs';
+import * as Story from './Modal.stories';
+
+<Meta of={Story} />
+
+# Modal Component
+This is the documentation for the Modal component. It provides a way to display content in a modal dialog.
+
+### Modal Info
+<Canvas of={Story.ModalInfo} layout='centered'/>
+
+### Save Changes Modal
+<Canvas of={Story.ModalSaveChanges} layout='centered'/>
+
+### Delete Account Modal
+<Canvas of={Story.ModalDeleteAccount} layout='centered'/>
+
+### Modal with Component Stubs
+<Canvas of={Story.ModalWithStubs} layout='centered'/>

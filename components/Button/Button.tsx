@@ -1,5 +1,5 @@
 export type ButtonProps = {
-  variant?: 'primary' | 'secondary' | 'tertiary';
+  variant?: 'primary' | 'secondary' | 'tertiary' | 'danger';
   children?: React.ReactNode;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
@@ -21,6 +21,10 @@ function getVariantStyle(
       return disabled
         ? `${generalStyle} bg-disabled text-disabled`
         : `${generalStyle} bg-transparent text-primary`;
+    case 'danger':
+      return disabled
+        ? `${generalStyle} bg-red-300 text-white cursor-not-allowed`
+        : `${generalStyle} bg-red-500 text-white hover:bg-red-600`;
     default:
       return disabled
         ? `${generalStyle} bg-disabled text-disabled`

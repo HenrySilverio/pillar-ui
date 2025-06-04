@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import ThemeSwitch from './ThemeSwitch';
 
 const meta: Meta<typeof ThemeSwitch> = {
-  title: 'Molecules/ThemeSwitch',
+  title: 'Design System/Molecules/ThemeSwitch',
   component: ThemeSwitch,
 };
 

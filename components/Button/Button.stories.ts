@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import Button, { ButtonProps } from '@/components/Button/Button';
 
 const meta: Meta<ButtonProps> = {
-  title: 'Molecules/Button',
+  title: 'Design System/Molecules/Button',
   component: Button,
   argTypes: {
     children: {
@@ -13,6 +13,10 @@ const meta: Meta<ButtonProps> = {
     },
     className: {
       type: 'string'
+    },
+    onClick: {
+      action: 'clicked',
+      description: 'Function to call when the button is clicked',
     }
   },
 };

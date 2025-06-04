@@ -111,7 +111,7 @@ export const ModalWithStubs: Story = {
 };
 
 const meta: Meta<typeof Modal> = {
-  title: 'Molecules/Modal',
+  title: 'Design System/Molecules/Modal',
   component: Modal,
   decorators: [
     (Story) => (

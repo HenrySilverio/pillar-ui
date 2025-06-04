@@ -3,7 +3,7 @@ import AlertBox, { AlertBoxProps } from './AlertBox';
 import { SingleAction, DoubleActions, SuccessActions } from './AlertBox.actions';
 
 const meta: Meta<AlertBoxProps> = {
-  title: 'Molecules/AlertBox',
+  title: 'Design System/Molecules/AlertBox',
   component: AlertBox,
 };
 

@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import Divider, { DividerProps } from './Divider'
 
 const meta: Meta<DividerProps> = {
-  title: 'Atoms/Divider',
+  title: 'Design System/Atoms/Divider',
   component: Divider,
   argTypes: {
     children: {
